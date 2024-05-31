@@ -5,10 +5,11 @@ def main():
     number = counter(words)
     lowered_string = convert_to_string(text)
     letter_dict = count_letters(lowered_string)
+    list_of_dicts = list_maker(letter_dict)
     # print(text)
     # print(words)
     # print(lowered_string)
-    print(letter_dict)
+    # print(letter_dict)
     print(number)
     
 
@@ -45,10 +46,14 @@ def count_letters(lowered_string):
             letter_dict[letter] += 1
         else:
             letter_dict[letter] = 1
+    #print (letter_dict["j"])
     return letter_dict
     
-# Kiveszi belőle a betűket és ABC sorrendbe teszi.
+# Kiveszi belőle a betűket és ABC sorrendbe teszi, de előtte listát is csinál. 
+
     
+    
+
 
 
 
